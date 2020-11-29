@@ -61,7 +61,7 @@ class Queue {
         return this.array[this.front];
     }
 
-    // Method to get rear of queue
+    // Method to get the end of queue
     int rear()
     {
         if (isEmpty(this))

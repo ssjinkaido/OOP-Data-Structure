@@ -36,15 +36,6 @@ public class BinaryTree {
         root = addRecursive(root, value);
     }
 
-    void printPreorder(Node node)
-    {
-        if (node == null)
-            return;
-        System.out.print(node.value + " ");
-        printPreorder(node.left);
-        printPreorder(node.right);
-    }
-
     public void traverseInOrder(Node node) {
         if (node != null) {
             traverseInOrder(node.left);
@@ -118,8 +109,5 @@ public class BinaryTree {
         bt.traversePostOrder(bt.root);
         System.out.println("\nTraverse in preorder");
         bt.traversePreOrder(bt.root);
-
-
-
     }
 }
